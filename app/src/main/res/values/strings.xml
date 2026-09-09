@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Laporan Siswa</string>
+
+    <!-- Halaman utama -->
+    <string name="judul_utama">Laporan Pengaduan Siswa</string>
+    <string name="subjudul_utama">Laporkan kejadian di lingkungan sekolah, pihak sekolah akan segera menindaklanjuti.</string>
+    <string name="kartu_perundungan">Laporan\nPerundungan</string>
+    <string name="kartu_fasilitas">Laporan\nFasilitas Rusak</string>
+    <string name="kartu_pelanggaran">Laporan\nPelanggaran</string>
+    <string name="kartu_keamanan">Laporan\nKeamanan</string>
+    <string name="kartu_riwayat">Riwayat\nLaporan Anda</string>
+    <string name="buka">Buka</string>
+    <string name="info">Info</string>
+
+    <!-- Nama kategori (harus sama dengan Constant.java) -->
+    <string name="kategori_perundungan">Laporan Perundungan</string>
+    <string name="kategori_fasilitas">Laporan Fasilitas Rusak</string>
+    <string name="kategori_pelanggaran">Laporan Pelanggaran Tata Tertib</string>
+    <string name="kategori_keamanan">Laporan Keamanan &amp; Keselamatan</string>
+
+    <!-- Form laporan -->
+    <string name="peringatan_laporan_palsu">Mohon jangan berikan laporan palsu!</string>
+    <string name="unggah_foto_bukti">Unggah Foto Bukti Laporan</string>
+    <string name="foto_bukti">Foto bukti laporan</string>
+    <string name="lapor_anonim">Laporkan secara anonim</string>
+    <string name="keterangan_anonim">Identitas Anda tidak akan ditampilkan pada riwayat laporan.</string>
+    <string name="nama_pelapor">Nama Pelapor</string>
+    <string name="hint_nama">Masukan nama Anda</string>
+    <string name="kelas">Kelas</string>
+    <string name="hint_kelas">cth: XII IPA 2</string>
+    <string name="nis">NIS</string>
+    <string name="hint_nis">Nomor induk</string>
+    <string name="telepon_pelapor">Telepon / WhatsApp</string>
+    <string name="hint_telepon">Masukan nomor yang bisa dihubungi</string>
+    <string name="pihak_terlapor">Pihak Terlapor (opsional)</string>
+    <string name="hint_terlapor">Nama pihak yang dilaporkan</string>
+    <string name="lokasi_kejadian">Lokasi Kejadian</string>
+    <string name="hint_lokasi">Masukan lokasi kejadian</string>
+    <string name="tanggal_kejadian">Tanggal Kejadian</string>
+    <string name="hint_tanggal">Pilih tanggal</string>
+    <string name="isi_laporan">Isi Laporan</string>
+    <string name="hint_isi_laporan">Ceritakan kejadian selengkapnya</string>
+    <string name="kirim_laporan">Kirim laporan</string>
+
+    <!-- Riwayat -->
+    <string name="riwayat_laporan">Riwayat Laporan Anda</string>
+    <string name="belum_ada_laporan">Ups, Anda belum lapor apapun</string>
+    <string name="belum_ada_laporan_filter">Tidak ada laporan pada kategori ini</string>
+    <string name="laporan_terkirim">Laporan Terkirim</string>
+    <string name="lihat_detail">Lihat detail</string>
+    <string name="hapus_semua">Hapus semua</string>
+    <string name="filter_kategori">Filter kategori</string>
+    <string name="filter_semua">Semua</string>
+    <string name="export_riwayat">Export CSV</string>
+    <string name="export_sukses">Riwayat laporan berhasil di-export</string>
+    <string name="export_gagal">Gagal export laporan</string>
+    <string name="export_tidak_ada">Tidak ada laporan untuk di-export</string>
+
+    <!-- Detail -->
+    <string name="detail_laporan">Detail Laporan</string>
+    <string name="pelapor_anonim">Pelapor Anonim</string>
+    <string name="format_nama_kelas">%1$s \u2022 Kelas %2$s</string>
+    <string name="label_nis">NIS: %1$s</string>
+    <string name="label_telepon">Telepon: %1$s</string>
+    <string name="label_terlapor">Terlapor: %1$s</string>
+    <string name="label_lokasi">Lokasi: %1$s</string>
+    <string name="label_tanggal">Tanggal kejadian: %1$s</string>
+    <string name="label_dikirim">Dikirim: %1$s</string>
+    <string name="tidak_disebutkan">Tidak disebutkan</string>
+    <string name="hapus_laporan_ini">Hapus Laporan Ini</string>
+</resources>

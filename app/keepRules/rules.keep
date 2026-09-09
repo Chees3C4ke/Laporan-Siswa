@@ -1,0 +1,10 @@
+# Keep rules tambahan untuk R8/ProGuard pada build type release.
+# File ini otomatis disertakan lewat proguardFiles di app/build.gradle.kts.
+
+# Entity Room diakses lewat reflection oleh Room runtime,
+# jadi class model tidak boleh di-obfuscate / dibuang.
+-keep class com.pplgsmkn4.laporanmasyarakat.model.** { *; }
+
+# Entry point Glide module (jika nanti memakai custom GlideModule).
+-keep public class * implements com.bumptech.glide.module.GlideModule
+-keep class * extends com.bumptech.glide.module.AppGlideModule { <init>(...); }
