@@ -20,5 +20,4 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
-# Entity Room dipakai lewat reflection oleh Room runtime.
--keep class com.laporansiswa.app.model.** { *; }
+# Keep rules khusus aplikasi (Room entity, Glide module) ada di keepRules/rules.keep

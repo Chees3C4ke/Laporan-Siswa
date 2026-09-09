@@ -39,12 +39,16 @@ bukti, lokasi, dan tanggal kejadian. Semua laporan tersimpan rapi di perangkat
 | Android Gradle Plugin | 8.5.2 |
 | JDK           | 17      |
 | Bahasa        | Java    |
+| Gradle script | Kotlin DSL + version catalog (`gradle/libs.versions.toml`) |
+
+Package & applicationId: `com.pplgsmkn4.laporanmasyarakat`
+(sama dengan template project Android Studio PPLG SMKN 4).
 
 Butuh **Android Studio Koala (2024.1.1) atau lebih baru** karena AGP 8.5.
 
 ## Cara Menjalankan di Android Studio
 
-1. `File` → `Open...` → pilih folder project ini (yang berisi `settings.gradle`).
+1. `File` → `Open...` → pilih folder project ini (yang berisi `settings.gradle.kts`).
 2. Tunggu Gradle sync selesai (sekalian download dependency).
 3. Pilih emulator / device Android 8.0+, klik **Run ▶**.
 
@@ -60,7 +64,7 @@ APK hasil build ada di `app/build/outputs/apk/debug/`.
 ## Struktur Project
 
 ```
-app/src/main/java/com/laporansiswa/app/
+app/src/main/java/com/pplgsmkn4/laporanmasyarakat/
 ├── dao/DatabaseDao.java            # query Room (insert, select, delete)
 ├── database/AppDatabase.java       # definisi database
 ├── database/DatabaseClient.java    # singleton Room
@@ -74,6 +78,11 @@ app/src/main/java/com/laporansiswa/app/
 ├── utils/                          # BitmapManager, Constant, KategoriHelper, StatusBarUtil
 └── viewmodel/                      # InputData / History / Detail ViewModel (RxJava3)
 
+build.gradle.kts                    # plugin AGP (via version catalog)
+settings.gradle.kts                 # repositories + include :app
+gradle/libs.versions.toml           # semua versi dependency di satu tempat
+app/build.gradle.kts                # namespace, SDK, dependencies
+app/keepRules/rules.keep            # keep rules R8 (Room entity, Glide)
 tools/verify_resources.py           # dev tool: cek statis referensi resource tanpa SDK
 ```
 

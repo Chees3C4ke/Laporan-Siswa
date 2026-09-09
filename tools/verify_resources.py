@@ -142,7 +142,7 @@ for p in java_files:
 man = open(MANIFEST, encoding="utf-8").read()
 for m in re.finditer(r'android:name="\.([A-Za-z0-9_.]+)"', man):
     rel = m.group(1).replace(".", "/")
-    if not os.path.exists(os.path.join(JAVA, "com", "laporansiswa", "app", rel + ".java")):
+    if not os.path.exists(os.path.join(JAVA, "com", "pplgsmkn4", "laporanmasyarakat", rel + ".java")):
         errors.append(f"MANIFEST MISSING class .{m.group(1)}")
 
 print("=== HASIL ===")
